@@ -1,38 +1,469 @@
-.App {
-  text-align: center;
+body {
+  background-color: rgb(218, 217, 217);
+}
+.navbar {
+  z-index: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Black div */
+.mai-outer {
+  position: relative;
+  width: 700px;
+  height: 592px;
+  border: 2px solid rgb(221, 99, 99);
+}
+.front-page {
+  margin-top: 200px;
+  margin-left: 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.front-size {
+  width: 405px;
+  height: 405px;
+}
+
+.main {
+  position: absolute;
+  width: 60%;
+  height: 115vh;
+  margin: -139px 20px 60px 619px;
+  transform: rotate(2deg);
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+}
+/* Black div */
+
+.link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 8px;
+  transition: 0.5s;
+}
+.link:hover {
+  background-color: white;
+  color: black;
+  border-radius: 14px;
+}
+
+.details {
+  margin-left: 210px;
+  margin-top: 195px;
+  margin-bottom: 30px;
+}
+.navicon {
+  margin-bottom: 245px;
+}
+.About-me {
+  position: relative;
+  height: 1150px;
+
+  /* margin-top: 390px; */
+  /* border: 2px solid red; */
+  background-color: rgb(215, 215, 215);
+  z-index: 10;
+}
+.aboutText {
+  border: 5px solid black;
+  height: 60px;
+  margin-top: 65px;
+  padding: 10px 40px 40px 40px;
+  letter-spacing: 5px;
+}
+
+.project {
+  width: 350px;
+  height: 250px;
+  background-color: black;
+  margin: 30px 0px 40px 190px;
+}
+
+.cardOuter {
+  width: 1100px;
+  cursor: pointer;
+}
+.card {
+  transition: 0.5s;
+  background-color: rgb(63, 63, 63);
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+.projectsection {
+  height: 1400px;
+}
+.skill {
+  transition: 0.5s;
+  cursor: pointer;
+}
+.skill:hover {
+  transform: scale(1.2);
+  font-style: italic;
+}
+.using-skill-img,
+.learing-skills,
+.other-skills {
+  height: 140px;
+  width: 140px;
+}
+.learing-skills-name,
+.other-skils-names {
+  margin-left: 35px;
+}
+.letter-space {
+  letter-spacing: 4px;
+}
+.contactFormColor {
+  background-color: rgb(215, 215, 215);
+  border-left: 4px solid black;
+  border-bottom: 4px solid black;
+}
+
+@media (max-width: 1300px) {
+  body {
+    background-color: rgb(218, 217, 217);
+  }
+  .main {
+    position: absolute;
+    width: 70%;
+    height: 115vh;
+    margin: -139px 20px 60px 490px;
+    transform: rotate(2deg);
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .projectsection {
+    height: 1450px;
+  }
+}
+@media (max-width: 1200px) {
+  body {
+    background-color: rgb(218, 217, 217);
+  }
+  .navbar {
+    z-index: 1;
+  }
+
+  /* Black div */
+  .mai-outer {
+    position: relative;
+    width: 700px;
+    height: 592px;
+    border: 2px solid rgb(221, 99, 99);
+  }
+  .front-page {
+    margin-top: 200px;
+    margin-left: 200px;
+  }
+
+  .front-size {
+    width: 405px;
+    height: 405px;
+  }
+  .main {
+    position: absolute;
+    width: 63%;
+    height: 115vh;
+    margin: -139px 20px 60px 450px;
+    transform: rotate(2deg);
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  /* Black div */
+
+  .link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 8px;
+    transition: 0.5s;
+  }
+  .link:hover {
+    background-color: white;
+    color: black;
+    border-radius: 14px;
+  }
+
+  .details {
+    margin-left: 100px;
+    margin-top: 195px;
+    margin-bottom: 30px;
+  }
+  .navicon {
+    margin-bottom: 245px;
+    margin-left: -40px;
+  }
+  .About-me {
+    position: relative;
+    height: 1150px;
+    /* margin-top: 390px; */
+    /* border: 2px solid red; */
+    background-color: rgb(215, 215, 215);
+    z-index: 10;
+  }
+  .aboutText {
+    border: 5px solid black;
+    height: 60px;
+    margin-top: 65px;
+    padding: 10px 40px 40px 40px;
+    letter-spacing: 5px;
+  }
+
+  .project {
+    width: 350px;
+    height: 250px;
+    background-color: black;
+    margin: 30px 0px 40px 190px;
+  }
+  .projectsection {
+    height: 1470px;
+  }
+  .cardOuter {
+    width: 1100px;
+    cursor: pointer;
+  }
+  .card {
+    transition: 0.5s;
+    background-color: rgb(63, 63, 63);
+  }
+  .card:hover {
+    transform: scale(1.1);
+  }
+  .skill {
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .skill:hover {
+    transform: scale(1.2);
+    font-style: italic;
+  }
+  .using-skill-img,
+  .learing-skills,
+  .other-skills {
+    height: 140px;
+    width: 140px;
+  }
+  .learing-skills-name,
+  .other-skils-names {
+    margin-left: 35px;
+  }
+  .letter-space {
+    letter-spacing: 4px;
+  }
+  .contactFormColor {
+    background-color: rgb(215, 215, 215);
+    border-left: 4px solid black;
+    border-bottom: 4px solid black;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 1100px) {
+  body {
+    background-color: rgb(218, 217, 217);
   }
-  to {
-    transform: rotate(360deg);
+  .main {
+    position: absolute;
+    width: 75%;
+    height: 115vh;
+    margin: -139px 20px 60px 350px;
+    transform: rotate(2deg);
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  /* Black div */
+  .About-me {
+    position: relative;
+    height: 1150px;
+    width: 1090px;
+    /* margin-top: 390px; */
+    /* border: 2px solid red; */
+    background-color: rgb(215, 215, 215);
+    z-index: 10;
+  }
+  .details {
+    margin-left: 70px;
+    margin-top: 195px;
+    margin-bottom: 30px;
+    width: 500px;
+  }
+  .projectsection {
+    height: 1500px;
+  }
+  .using-skill-img,
+  .learing-skills,
+  .other-skills {
+    height: 110px;
+    width: 110px;
+  }
+  .learing-skills-name,
+  .other-skils-names {
+    margin-left: 35px;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    background-color: rgb(218, 217, 217);
+  }
+  .link {
+    margin-right: 35px;
+  }
+  .main {
+    position: absolute;
+    width: 640px;
+    height: 115vh;
+    margin: -139px 20px 60px 330px;
+    transform: rotate(2deg);
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .About-me {
+    position: relative;
+    height: 1150px;
+    width: 950px;
+    /* margin-top: 390px; */
+    /* border: 2px solid red; */
+    background-color: rgb(215, 215, 215);
+    z-index: 10;
+  }
+  /* Black div */
+  .front-page {
+    margin-top: 280px;
+    margin-left: 150px;
+  }
+
+  .front-size {
+    width: 305px;
+    height: 305px;
+  }
+  .skills {
+    margin-top: 100px;
+  }
+  .details {
+    margin-left: 70px;
+    margin-top: 195px;
+    margin-bottom: 30px;
+    width: 500px;
+  }
+  .projectsection {
+    height: 1870px;
+  }
+  .using-skill-img,
+  .learing-skills,
+  .other-skills {
+    height: 70px;
+    width: 70px;
+  }
+  .learing-skills-name,
+  .other-skils-names {
+    margin-left: 8px;
+  }
+  .contact-info {
+    margin: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: rgb(218, 217, 217);
+  }
+  .main {
+    position: absolute;
+    width: 70%;
+    height: 115vh;
+    margin: -139px 20px 60px 250px;
+    transform: rotate(2deg);
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .link {
+    margin-left: -20px;
+  }
+  .About-me {
+    position: relative;
+    height: 1150px;
+    width: 750px;
+    /* margin-top: 390px; */
+    /* border: 2px solid red; */
+    background-color: rgb(215, 215, 215);
+    z-index: 10;
+  }
+  .front-page {
+    margin-top: 280px;
+    margin-left: 950px;
+    display: none;
+  }
+
+  .navicon {
+    margin-left: -15px;
+  }
+  .front-page {
+    margin-left: 135px;
+  }
+  .front-size {
+    width: 85px;
+  }
+  .details {
+    margin-left: 20px;
+    margin-top: 195px;
+    margin-bottom: 30px;
+    width: 500px;
+  }
+
+  .using-skill-img,
+  .learing-skills,
+  .other-skills {
+    height: 45px;
+    width: 40px;
+  }
+  .learing-skills-name,
+  .other-skils-names {
+    margin-left: -10px;
+  }
+  /* Black div */
+  .projectsection {
+    height: 2920px;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    background-color: rgb(218, 217, 217);
+  }
+  .logo {
+    color: white;
+    margin-top: 14px;
+  }
+  .About-me {
+    position: relative;
+    height: 1150px;
+    width: 550px;
+    /* margin-top: 390px; */
+    /* border: 2px solid red; */
+    background-color: rgb(215, 215, 215);
+    z-index: 10;
+  }
+  .main {
+    position: absolute;
+    width: 660px;
+    margin-left: -110px;
+    transform: rotate(-0deg);
+  }
+  .anchour {
+    margin-left: -40px;
+  }
+  .projectsection {
+    height: 3095px;
+  }
+  .details {
+    margin-left: 30px;
+    margin-top: 195px;
+    margin-bottom: 30px;
+
+    color: white;
+    position: relative;
+    z-index: 20;
+  }
+  .navicon {
+    margin-left: 15px;
+
+    position: relative;
+    z-index: 15;
+  }
+  .front-page {
+    display: none;
   }
 }
