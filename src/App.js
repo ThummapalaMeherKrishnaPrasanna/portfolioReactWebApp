@@ -4,26 +4,26 @@ const navIcons = [
   {
     id: 1,
     name: "mail",
-    image: "mail.png",
+    image: "/mail.png",
     link: "https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDbhGdctdknRVrgDSfTKmjDQNrfhtJXqfjdjTrbkcgJRJrPPkmhGlnqSqTSmZwXZMZbNlCW",
   },
   {
     id: 2,
     name: "Github",
-    image: "github.png",
+    image: "/github.png",
     link: "https://github.com/ThummapalaMeherKrishnaPrasanna",
   },
   {
     id: 3,
     name: "Linkedin",
-    image: "linkedin1.png",
+    image: "/linkedin1.png",
     link: "https://www.linkedin.com/in/meher-krishna-prasanna-thummapala/",
   },
 ];
 const carousel = [
   {
     id: 1,
-    image: "Photo.png",
+    image: "/Photo.png",
     projectTitle: "Sweet Treats",
     gitLink:
       "https://github.com/ThummapalaMeherKrishnaPrasanna/Sweet-Treats-Responsive-website",
@@ -33,7 +33,7 @@ const carousel = [
   },
   {
     id: 2,
-    image: "Quiz Photo.png",
+    image: "/Quiz Photo.png",
     projectTitle: "Quiz App",
     gitLink:
       "https://github.com/ThummapalaMeherKrishnaPrasanna/Quiz-App-Dynamic-Website",
@@ -43,7 +43,7 @@ const carousel = [
   },
   {
     id: 3,
-    image: "weather forecast photo.png",
+    image: "/weather forecast photo.png",
     projectTitle: "Weather Forecast",
     gitLink:
       "https://github.com/ThummapalaMeherKrishnaPrasanna/Weather-Forecast-API-Dynamic-Website",
@@ -53,7 +53,7 @@ const carousel = [
   },
   {
     id: 4,
-    image: "shop react-app photo.png",
+    image: "/shop react-app photo.png",
     projectTitle: "Shop App",
     gitLink:
       "https://github.com/ThummapalaMeherKrishnaPrasanna/shop-dynamic-web-app",
@@ -63,7 +63,7 @@ const carousel = [
   },
   {
     id: 5,
-    image: "usepopcorn-3.png",
+    image: "/usepopcorn-3.png",
     projectTitle: "Usepopcorn App",
     gitLink:
       "https://github.com/ThummapalaMeherKrishnaPrasanna/Usepopcorn-React-web-app",
@@ -73,7 +73,7 @@ const carousel = [
   },
   {
     id: 6,
-    image: "job board platform.png",
+    image: "/job board platform.png",
     projectTitle: "Job Board Platform",
     gitLink:
       "https://github.com/ThummapalaMeherKrishnaPrasanna/Job-Board-Platform",
@@ -87,49 +87,49 @@ const usingSkills = [
   {
     id: 1,
     name: "HTML",
-    image: "html.png",
+    image: "/html.png",
   },
   {
     id: 2,
     name: "CSS",
-    image: "css.png",
+    image: "/css.png",
   },
   {
     id: 3,
     name: "JS",
-    image: "js.png",
+    image: "/js.png",
   },
   {
     id: 4,
     name: "BOOTSTRAP",
-    image: "bootstrap.png",
+    image: "/bootstrap.png",
   },
   {
     id: 5,
     name: "REACT",
-    image: "logo192.png",
+    image: "/logo192.png",
   },
   {
     id: 6,
     name: "GITHUB",
-    image: "github.png",
+    image: "/github.png",
   },
 ];
 const learingSkill = [
   {
     id: 1,
     name: "NODE JS",
-    image: "node_js.png",
+    image: "/node_js.png",
   },
   {
     id: 2,
     name: "MY SQL",
-    image: "my_sql.png",
+    image: "/my_sql.png",
   },
   {
     id: 3,
     name: "MONGODB",
-    image: "mongodb.png",
+    image: "/mongodb.png",
   },
 ];
 
@@ -137,12 +137,12 @@ const OtherSkills = [
   {
     id: 1,
     name: "JAVA",
-    image: "JAVA1.png",
+    image: "/JAVA1.png",
   },
   {
     id: 2,
     image: "mainframes.png",
-    name: "MAINFRAMES",
+    name: "/MAINFRAMES",
   },
 ];
 
@@ -238,7 +238,7 @@ function Main() {
     <div className="main-outer">
       <div className="bg-dark main">
         <div className="front-page">
-          <img className="front-size" src="Web_dev2.png" alt="image1" />
+          <img className="front-size" src="/Web_dev2.png" alt="image1" />
         </div>
       </div>
     </div>
@@ -578,7 +578,7 @@ function Toast({ result }) {
         <div id="liveToast" className="toast">
           <div className="toast-header">
             <img
-              src="mail1-removebg-preview.png"
+              src="/mail1-removebg-preview.png"
               className="rounded me-2"
               style={{ height: "25px", width: "25px" }}
               alt="..."
