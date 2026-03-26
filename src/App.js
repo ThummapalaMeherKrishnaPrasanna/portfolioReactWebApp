@@ -73,7 +73,7 @@ const carousel = [
   },
   {
     id: 6,
-    image: "/job board platform.png",
+    image: "/Job board platform.png",
     projectTitle: "Job Board Platform",
     gitLink:
       "https://github.com/ThummapalaMeherKrishnaPrasanna/Job-Board-Platform",
@@ -129,7 +129,7 @@ const learingSkill = [
   {
     id: 3,
     name: "MONGODB",
-    image: "/mongodb.png",
+    image: "/Mongodb.png",
   },
 ];
 
@@ -142,7 +142,7 @@ const OtherSkills = [
   {
     id: 2,
     image: "mainframes.png",
-    name: "/MAINFRAMES",
+    name: "MAINFRAMES",
   },
 ];
 
