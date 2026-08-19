@@ -151,6 +151,7 @@ const learingSkill = [
   },
   {
     id: 3,
+
     name: "SPRINGBOOT",
     image: "/springboot1.png",
   },
