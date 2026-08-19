@@ -73,13 +73,31 @@ const carousel = [
   },
   {
     id: 6,
-    image: "/job board platform.png",
+    image: "/Job board platform.png",
     projectTitle: "Job Board Platform",
     gitLink:
       "https://github.com/ThummapalaMeherKrishnaPrasanna/Job-Board-Platform",
 
     description:
-      "Developed a responsive Job Board website displaying IT job listings using HTML, CSS, and Bootstrap. And you can select company",
+      "Developed a responsive Job Board website displaying IT job listings using HTML, CSS, and Bootstrap. And you can select company.",
+  },
+  {
+    id: 7,
+    image: "/Image 1.png",
+    projectTitle: "Thomas Travels",
+    gitLink:
+      "https://github.com/ThummapalaMeherKrishnaPrasanna/FlmMiniProjectsJFS/tree/develop/ThomasTravels",
+    description:
+      "The goal of this project was to automate and streamline customer service operations by managing driver details and performing key operations.",
+  },
+  {
+    id: 8,
+    image: "/Web form - Copy1.png",
+    projectTitle: "Cloud Resume Builder",
+    gitLink:
+      "https://github.com/ThummapalaMeherKrishnaPrasanna/CloudReumeBuilder",
+    description:
+      "This project presents the implementation of a resume generation system using Amazon Web Services (AWS) that enables users to create professional resume.",
   },
 ];
 
@@ -111,6 +129,11 @@ const usingSkills = [
   },
   {
     id: 6,
+    name: "JAVA",
+    image: "/JAVA1.png",
+  },
+  {
+    id: 7,
     name: "GITHUB",
     image: "/github.png",
   },
@@ -118,33 +141,43 @@ const usingSkills = [
 const learingSkill = [
   {
     id: 1,
-    name: "NODE JS",
-    image: "/node_js.png",
+    name: "SQL",
+    image: "/SQL1.png",
   },
   {
     id: 2,
-    name: "MY SQL",
-    image: "/my_sql.png",
+    name: "HIBERNATE",
+    image: "/HIBERNATE1.png",
   },
   {
     id: 3,
-    name: "MONGODB",
-    image: "/mongodb.png",
+    name: "SPRINGBOOT",
+    image: "/springboot1.png",
+  },
+  {
+    id: 4,
+    name: "MICROSERVICES",
+    image: "/microservices.png",
+  },
+  {
+    id: 5,
+    name: "KAFKA",
+    image: "/KAFKA1.png",
+  },
+  {
+    id: 6,
+    name: "AWS",
+    image: "/AWS.png",
   },
 ];
 
-const OtherSkills = [
-  {
-    id: 1,
-    name: "JAVA",
-    image: "/JAVA1.png",
-  },
-  {
-    id: 2,
-    image: "mainframes.png",
-    name: "/MAINFRAMES",
-  },
-];
+// const OtherSkills = [
+//   {
+//     id: 2,
+//     image: "mainframes.png",
+//     name: "MAINFRAMES",
+//   },
+// ];
 
 function App() {
   const [redirect, setRedirect] = useState("");
@@ -171,7 +204,7 @@ function App() {
           <Certification />
           <MyProjects />
         </Section>
-        <Section>
+        <Section height="890px">
           <Box>
             <p className="aboutText fw-bold fs-4" id="skill">
               Skills
@@ -179,7 +212,7 @@ function App() {
           </Box>
           <Skills />
         </Section>
-        <Section>
+        <Section height="890px">
           <Box>
             <p className="aboutText fw-bold fs-4" id="contact">
               CONTACT
@@ -251,7 +284,7 @@ function Details({ children }) {
       <div className="details ">
         <p className="fw-bold fs-5">Hi, I am</p>
         <h1 className="mb-0 ms-2">Meher Krishna</h1>
-        <p className="fs-6 ms-2">Aspiring Front-end Developer</p>
+        <p className="fs-6 ms-2">Aspiring Full Stack Java Developer</p>
       </div>
       {children}
     </>
@@ -281,8 +314,12 @@ function NavIcons({ redirect, handleIcon }) {
     </div>
   );
 }
-function Section({ children, className }) {
-  return <div className={`About-me ${className}`}>{children}</div>;
+function Section({ children, className, height }) {
+  return (
+    <div className={`About-me ${className}`} style={{ height }}>
+      {children}
+    </div>
+  );
 }
 
 function AboutMe({ children }) {
@@ -292,8 +329,9 @@ function AboutMe({ children }) {
 
       <div className="d-flex justify-content-center mt-5 ">
         <p className="w-50" style={{ textAlign: "center" }}>
-          Aspiring Frontend Developer with hands-on experience in building
-          responsive web applications using HTML, CSS, JavaScript, and React. I
+          Aspiring Full Stack Developer with hands-on experience in HTML, CSS,
+          Bootstrap, JavaScript, React.js, Java, SQL, AWS, and Git/GitHub.
+          Seeking an opportunity to contribute to scalable software solutions. I
           enjoy turning ideas into interactive digital experiences and
           continuously improving my problem-solving and development skills.
         </p>
@@ -318,15 +356,11 @@ const Certifications = [
     Certificate:
       "I completed 4 months long-term on internship in Java Full Stack Development organized by Talent Shine India Pvt.Ltd.",
   },
+
   {
     id: 4,
     Certificate:
-      "IBM Mainframe: Completed Hands-on training in JCL, COBOL, VSAM, DB2, CICS.",
-  },
-  {
-    id: 5,
-    Certificate:
-      "I completed 6 – weeks internship in Employability Skill leveraging IBM SkillBuild platform (APSSDC).",
+      "I completed 2 – months internship in AWS Cloud Computing - DevOps at (APSSDC).",
   },
 ];
 function Box({ children }) {
@@ -360,8 +394,11 @@ function MyProjects() {
       <h4 className="ms-5 ps-4" id="project">
         My Latest Projects :
       </h4>
-      <div className="d-flex justify-content-center ">
-        <div className="cardOuter d-flex justify-content-center flex-wrap p-5 ">
+      <div className="d-flex justify-content-center">
+        <div
+          className="cardOuter d-flex justify-content-center flex-wrap p-5 overflow-auto"
+          style={{ height: "720px" }}
+        >
           {carousel.map((item) => (
             <div key={item.id}>
               <a
@@ -437,10 +474,10 @@ function Skills() {
           </div>
         ))}
       </div>
-      <div className="d-flex justify-content-center w-25 ms-5 mt-4">
+      {/* <div className="d-flex justify-content-center w-25 ms-5 mt-4">
         <h4 style={{ letterSpacing: "4px" }}>OTHER SKILLS :</h4>
-      </div>
-      <div className="d-flex justify-content-center mt-5">
+      </div> */}
+      {/* <div className="d-flex justify-content-center mt-5">
         {OtherSkills.map((other) => (
           <div key={other.id}>
             <img
@@ -451,7 +488,7 @@ function Skills() {
             <p className="mt-3 fw-semibold other-skils-names">{other.name}</p>
           </div>
         ))}
-      </div>
+      </div> */}
     </>
   );
 }
@@ -461,8 +498,8 @@ function Contact() {
     <>
       <div className="contact-info d-flex justify-content-center mt-5">
         <p>
-          I'm currently seeking frontend developer opportunities where I can
-          contribute and grow. Let’s connect and build something amazing
+          I'm currently seeking Full Stack Java developer opportunities where I
+          can contribute and grow. Let’s connect and build something amazing
           together.
         </p>
       </div>
